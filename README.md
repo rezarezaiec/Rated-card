@@ -1,5 +1,5 @@
 # Preview
-![Project preview](./preview.png "Project Preview")
+![Project preview](./Preview.png "Project Preview")
 
 # Rated Card Project
 This project is designed to rated cards.
