@@ -1,0 +1,152 @@
+/********  fonts  ********/
+@font-face {
+  font-family: "spantan-bold";
+  src: url("../../public/fonts/LeagueSpartan/LeagueSpartan-Bold.ttf");
+}
+@font-face {
+  font-family: "spantan-light";
+  src: url("../../public/fonts/LeagueSpartan//LeagueSpartan-Light.ttf");
+}
+@font-face {
+  font-family: "spantan-Elight";
+  src: url("../../public/fonts/LeagueSpartan//LeagueSpartan-ExtraLight.ttf");
+}
+:root {
+  --text-color-1: rgb(75 34 78);
+  --text-color-2: rgb(161, 44, 169);
+  --bg-color-1: #f6f2f7;
+  --bg-color-2: rgb(75 34 78);
+  --border-radius: 8px;
+  font-family: "spantan-bold";
+}
+body {
+  background: #26032c;
+}
+/********** Start Card **********/
+.card {
+  background-image: url("../../public/images/bg-pattern-top-desktop.svg"),
+    url("../../public/images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+}
+/**** Start Rating Card ****/
+/** Start Rating Card Text **/
+.card .rating-cards .rating-text .rating-title {
+  width: 90%;
+}
+.card .rating-cards .rating-text .rating-title h1 {
+  color: var(--text-color-1);
+  font-size: 66px;
+  letter-spacing: -0.03em;
+  font-family: "spantan-bold";
+  line-height: 0.9em;
+}
+.card .rating-cards .rating-text .rating-desc {
+  width: 85%;
+}
+.card .rating-cards .rating-text .rating-desc p {
+  font-family: "spantan-light";
+  color: var(--text-color-1);
+  line-height: 1em;
+  font-size: 17px;
+}
+/** End Rating Card Info **/
+/** Start Rating Card Info **/
+.card .rating-cards .rating-info .info-item {
+  background: var(--bg-color-1);
+  border-radius: var(--border-radius);
+  width: 90%;
+  color: var(--text-color-1);
+  font-family: "spantan-bold";
+}
+/** End Rating Card Info **/
+/***** Start Responsive Rating Card *****/
+@media (max-width: 1200px) {
+  .card .rating-cards .rating-text .rating-title h1 {
+    font-size: 60px;
+  }
+  .card .rating-cards .rating-text .rating-desc p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 992px) {
+  .card .rating-cards .rating-text .rating-title {
+    width: 100%;
+  }
+  .card .rating-cards .rating-text .rating-desc {
+    width: 100%;
+  }
+  .card .rating-cards .rating-text .rating-title h1 {
+    font-size: 45px;
+  }
+  .card .rating-cards .rating-text .rating-desc p {
+    font-size: 12px;
+  }
+  .card .rating-cards .rating-info .info-item .rating-title {
+    font-size: 12px;
+  }
+  .card .rating-cards .rating-info .info-item .rating-image img {
+    width: 12px;
+    height: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .card .rating-cards .rating-text .rating-title h1 {
+    font-size: 40px;
+  }
+  .card .rating-cards .rating-text .rating-desc p {
+    font-size: 14px;
+  }
+}
+/***** End Responsive Rating Card *****/
+/**** End Rating Card ****/
+
+/**** Start Profile Card ****/
+.card .profile-cards {
+  height: 50%;
+}
+.card .profile-cards .card {
+  background-color: var(--bg-color-2);
+  border-radius: var(--border-radius);
+  color: white;
+  font-family: "spantan-bold";
+}
+.card .profile-cards .card .profile-info .info-name h5 {
+  font-size: 16px;
+}
+.card .profile-cards .card .profile-info .info-job {
+  color: var(--text-color-2);
+  font-size: 14px;
+}
+.card .profile-cards .card .profile-desc {
+  font-family: "spantan-Elight";
+}
+.card .profile-cards .card .profile-image {
+  width: 30%;
+  height: 20%;
+}
+/**** Start Responsive Profile Card ****/
+@media (max-width: 1200px) {
+  .card .profile-cards .card .profile-info .info-name h5 {
+    font-size: 13px;
+    text-wrap: nowrap;
+  }
+  .card .profile-cards .card .profile-info .info-job {
+    font-size: 11px;
+  }
+  .card .profile-cards .card .profile-desc {
+    font-size: 13px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+@media (max-width: 576px) {
+  .card .profile-cards .card .profile-image {
+    width: 25%;
+    height: 15%;
+  }
+}
+/**** End Responsive Profile Card ****/
+/**** End Profile Card ****/
+/********** End Card **********/
